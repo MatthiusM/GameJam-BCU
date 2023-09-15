@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-public class Playscript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+using UnityEngine.SceneManagement;
+
+public class Playscript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
 
     public Image DCred;
@@ -24,6 +26,11 @@ public class Playscript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public void OnPointerExit(PointerEventData eventData)
     {
         DCred.sprite = DefIco;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        SceneManager.LoadScene("Planting area");
     }
     void Update()
     {

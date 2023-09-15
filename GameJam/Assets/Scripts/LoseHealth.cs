@@ -28,7 +28,7 @@ public class LoseHealth : MonoBehaviour
         while (true)
         {
             loseHealth();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(30);
         }
     }
 
