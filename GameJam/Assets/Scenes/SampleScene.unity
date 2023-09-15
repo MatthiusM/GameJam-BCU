@@ -225,9 +225,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1462034005}
   - component: {fileID: 1462034004}
-  - component: {fileID: 1462034003}
-  - component: {fileID: 1462034002}
   - component: {fileID: 1462034006}
+  - component: {fileID: 1462034007}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -235,33 +234,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1462034002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462034001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c30b480ad5c7a59409d0a72348365799, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSources:
-  - name: Sound
-    clip: {fileID: 8300000, guid: b0fa8aec7cd5ee04fadfd9da9af74a5a, type: 3}
---- !u!114 &1462034003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462034001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dca61907917dbc8499c8b5705698c412, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1462034004
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -425,3 +397,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1462034007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462034001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9affe91a7f7c25941846f6bc960a66b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 500
